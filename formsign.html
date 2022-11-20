@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<title> form</title>
+<style>
+    #container{
+        height: 730px;
+        width: 600px;
+        border: 2px solid white;
+        background-color: orange;
+    }
+    #header{
+        height: 50px;
+        border: 2px solid white;
+
+    }
+    #center{
+        height: 600px;
+        background-color: black;
+        border: 2px solid white;
+    }
+    #footer{
+        height: 80px;
+        border: 2px solid white;
+    }
+    
+    label{
+                width:180px;
+                clear:left;
+                
+                padding-right: 10px;
+                text-align: right;
+            }
+            p{
+                width: 180px;
+                padding-right: 10px;
+                text-align: right;
+            }
+            input{
+                margin-bottom:10px;
+                border-radius: 5px;
+            }
+           label{
+                
+                float: left;
+                
+            }
+        
+        
+           ul{
+            list-style-type: none;
+            color: yellow;
+           }
+           li{
+            margin: 26px;
+           }
+         
+          
+    </style>
+  </head>
+  <body>
+  
+  <div id="container">
+    <div id="header">
+        <h3><strong style="color:yellow;text-align:left">Sign up</strong></h3>
+
+    </div>
+    <div id="center">
+        <form>
+            <ul>
+                <li><label for="fname">First name:</label>
+                <input type="text" id="fname" name="username" placeholder="Enter first name">
+            </li>
+            
+                <li><label for="fname">Last name:</label>
+                <input type="text" id="fname" name="username" placeholder="Enter last name">
+            </li>
+            
+               
+            
+                <li><label for="sname">screen name:</label>
+                <input type="text" id="sname" name="screenname" placeholder="Enter screen name">
+            </li>
+            
+                <li><label for="dob">DOB:</label>
+                <input type="date" id="dob" name="username" size="35"  placeholder="month" ></li>
+                
+             <li>   <label for="gender">gender</label>
+                
+              <input type="radio" id="male" name="gender" value="male" > male
+              
+                <input type="radio" id="female" name="gender" value="female">Female </li> 
+                
+                
+                
+
+            <li><label for="num">Phone number:</label>
+                <input type="tel" id="num" name="userno" pattern="[0-9]{5}" placeholder="Enter ph no">
+            </li>
+            <li><label for="fname">email:</label>
+                <input type="text" id="fname" name="username" placeholder="Enter email">
+            </li>
+            
+                    <li><label for="pwd">password:</label>
+                        <input type="password" id="pwd" name="password" placeholder="Enter password">
+                    </li>
+                    <li><label for="pwd">confirm password:</label>
+                        <input type="password" id="pwd" name="password" placeholder="confirm password">
+                    </li>  
+                    
+                 <li>        <input type="checkbox" id="agree" name="agree" value="agree">      I agree to the terms of use</li>  
+                </ul> 
+          
+        </form>
+  </div>
+    <div id="footer">
+     <ul ><li style="margin-left: 400px;"> <input type="submit" value="submit" style="background-color:green;color:white"  > <input type="reset" value="cancel" style="background-color:red;color:white" ></li>
+</ul>  
+    </div>
+  </div>
+  </body>
+</html>
